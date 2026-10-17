@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VelvetGrip | סרט הקטיפה והסיליקון המושלם למניעת החלקה</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            darkGold: '#AA820A',
+                            rose: '#F8E8EE',
+                            charcoal: '#2C2C2C',
+                            softBg: '#FAF7F5',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Assistant', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Assistant', sans-serif; background-color: #FAF7F5; color: #2C2C2C; }
+        .tab-btn.active { border-bottom: 3px solid #D4AF37; font-weight: bold; color: #AA820A; }
+    </style>
+</head>
+<body class="bg-brand-softBg text-brand-charcoal">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-rose-100">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-wide text-brand-charcoal">
+                VELVET<span class="text-brand-gold">GRIP</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 space-x-reverse font-medium text-sm">
+                <a href="#store" class="hover:text-brand-gold transition">החנות</a>
+                <a href="#tutorial" class="hover:text-brand-gold transition">איך תופרים? (עם איורים)</a>
+                <a href="#marketing" class="hover:text-brand-gold transition">מוצרים נלווים ושיווק</a>
+            </nav>
+            <a href="#store" class="bg-brand-gold hover:bg-brand-darkGold text-white px-5 py-2 rounded-full font-semibold text-sm transition shadow-md">
+                להזמנה מהירה
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Navigation Tabs for the Interactive Experience -->
+    <div class="bg-white border-b border-gray-200 sticky top-[57px] z-40">
+        <div class="max-w-4xl mx-auto flex justify-around text-center text-sm md:text-base">
+            <button onclick="switchTab('store-view')" id="tab-store-view" class="tab-btn active py-3 px-4 w-full border-b-2">
+                🛍️ אתר החנות (תצוגת לקוח)
+            </button>
+            <button onclick="switchTab('tutorial-view')" id="tab-tutorial-view" class="tab-btn py-3 px-4 w-full border-b-2">
+                ✂️ מדריך תפירה איור-אחר-איור
+            </button>
+            <button onclick="switchTab('expansion-view')" id="tab-expansion-view" class="tab-btn py-3 px-4 w-full border-b-2">
+                🚀 מוצרים משלימים ותכנית שיווק
+            </button>
+        </div>
+    </div>
+
+    <!-- TAB 1: WEBSITE STORE FRONT -->
+    <main id="store-view" class="tab-content">
+        <!-- Hero Section -->
+        <section class="py-12 md:py-20 bg-gradient-to-b from-brand-rose/40 to-brand-softBg">
+            <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-6 text-center md:text-right">
+                    <span class="bg-brand-gold/20 text-brand-darkGold text-xs px-3 py-1 rounded-full font-semibold tracking-wider">
+                        חדשנות בלעדית: קטיפה + פס סיליקון
+                    </span>
+                    <h1 class="text-3xl md:text-5xl font-bold leading-tight">
+                        הסוף להחלקה של הפאה והמטפחת. <br>
+                        <span class="text-brand-gold">אחיזה מושלמת לכל היום!</span>
+                    </h1>
+                    <p class="text-gray-650 text-lg leading-relaxed">
+                        סרט הקטיפה האיכותי בשילוב רצועת סיליקון פנימית (כמו של ירכונים) ששומרת על היציבות בצורה מוחלטת, ללא כאבי ראש, ללא סיכות וללא החלקות.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#pricing" class="bg-brand-gold hover:bg-brand-darkGold text-white px-8 py-3 rounded-xl font-bold text-lg transition shadow-lg text-center">
+                            קני עכשיו - ₪79
+                        </a>
+                        <a href="#benefits" class="bg-white border border-gray-300 px-6 py-3 rounded-xl font-medium text-center hover:bg-gray-50 transition">
+                            למה זה עובד?
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Visual Product Display -->
+                <div class="bg-white p-6 rounded-2xl shadow-xl border border-rose-100 text-center relative">
+                    <div class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+                        הנרכש ביותר
+                    </div>
+                    <!-- Product Graphic -->
+                    <div class="w-full h-64 bg-gradient-to-r from-amber-100 via-rose-100 to-amber-50 rounded-xl flex flex-col items-center justify-center p-4 shadow-inner relative overflow-hidden">
+                        <!-- Mockup Band -->
+                        <div class="w-3/4 h-16 bg-stone-800 rounded-full shadow-2xl border-2 border-brand-gold flex items-center justify-between px-6 text-white text-xs relative">
+                            <span>קטיפה רכה</span>
+                            <div class="h-full border-r border-dashed border-brand-gold/60 mx-2"></div>
+                            <div class="bg-blue-900/30 border border-blue-400 px-3 py-1 rounded text-[10px] text-blue-200">
+                                💧 פס סיליקון פנימי
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-4">טכנולוגיית אחיזה כפולה (קטיפה + סיליקון)</p>
+                    </div>
+                    <div class="mt-4 flex justify-between items-center text-sm font-semibold">
+                        <span>סרט VelvetGrip פרימיום</span>
+                        <span class="text-brand-darkGold text-lg">₪79 <span class="line-through text-gray-400 text-sm">₪115</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="py-12 bg-white">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">למה סרט VelvetGrip שונה מכל מה שהכרת?</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="p-6 bg-brand-softBg rounded-xl text-center space-y-3">
+                        <div class="w-12 h-12 bg-brand-gold/20 text-brand-darkGold rounded-full flex items-center justify-center mx-auto text-xl font-bold">1</div>
+                        <h3 class="font-bold text-lg">סיליקון ירכונים פרימיום</h3>
+                        <p class="text-sm text-gray-600">רצועת הסיליקון הפנימית נצמדת בעדינות לעור ולשיער ואינה מאפשרת לסרט לתזוז אפילו מילמטר.</p>
+                    </div>
+                    <div class="p-6 bg-brand-softBg rounded-xl text-center space-y-3">
+                        <div class="w-12 h-12 bg-brand-gold/20 text-brand-darkGold rounded-full flex items-center justify-center mx-auto text-xl font-bold">2</div>
+                        <h3 class="font-bold text-lg">קטיפה מנוגדת סיבים</h3>
+                        <p class="text-sm text-gray-600">החלק החיצוני עשוי קטיפה שתופסת את הפאה או המטפחת ולא נותנת להן להחליק אחורה.</p>
+                    </div>
+                    <div class="p-6 bg-brand-softBg rounded-xl text-center space-y-3">
+                        <div class="w-12 h-12 bg-brand-gold/20 text-brand-darkGold rounded-full flex items-center justify-center mx-auto text-xl font-bold">3</div>
+                        <h3 class="font-bold text-lg">אפס לחץ על הראש</h3>
+                        <p class="text-sm text-gray-600">עיצוב ארגונומי עם סקוטש מתכוונן המונע את כאבי הראש האופייניים להידוק יתר.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Pricing Options -->
+        <section id="pricing" class="py-12 max-w-4xl mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">בחרי את המארז שלך</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Single Pack -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-md flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold">סרט בודד VelvetGrip</h3>
+                        <p class="text-gray-500 text-sm mb-4">לבחירה: שחור, ניוד או שמנת</p>
+                        <div class="text-3xl font-bold mb-4">₪79 <span class="text-xs text-gray-400 font-normal">+ משלוח ₪15</span></div>
+                        <ul class="text-sm space-y-2 mb-6 text-gray-600">
+                            <li>✓ פס סיליקון פנימי מלא</li>
+                            <li>✓ סקוטש להתאמה אישית</li>
+                            <li>✓ מתאים לפאות ולכיסויי ראש</li>
+                        </ul>
+                    </div>
+                    <button class="w-full bg-stone-800 hover:bg-black text-white py-3 rounded-xl font-bold transition">הזמיני יחידה אחת</button>
+                </div>
+
+                <!-- Double Pack Best Value -->
+                <div class="bg-white p-6 rounded-2xl border-2 border-brand-gold shadow-xl flex flex-col justify-between relative">
+                    <span class="absolute -top-3 right-6 bg-brand-gold text-white text-xs font-bold px-3 py-1 rounded-full">מארז משתלם ביותר</span>
+                    <div>
+                        <h3 class="text-xl font-bold">מארז זוגי משלים</h3>
+                        <p class="text-gray-500 text-sm mb-4">סרט שחור + סרט ניוד (שקוף/בהיר)</p>
+                        <div class="text-3xl font-bold mb-4 text-brand-darkGold">₪129 <span class="text-xs text-gray-400 font-normal"><s>₪158</s> (חורף מיוחד)</span></div>
+                        <ul class="text-sm space-y-2 mb-6 text-gray-600">
+                            <li>✓ 2 סרטים בצבעים שימושיים</li>
+                            <li>✓ <strong>משלוח חינם עד הבית</strong></li>
+                            <li>✓ שקית אחסון קטיפתית במתנה</li>
+                        </ul>
+                    </div>
+                    <button class="w-full bg-brand-gold hover:bg-brand-darkGold text-white py-3 rounded-xl font-bold transition shadow-lg">הזמיני מארז זוגי במבצע</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- TAB 2: STEP-BY-STEP SEWING TUTORIAL WITH ILLUSTRATIONS -->
+    <section id="tutorial-view" class="tab-content hidden py-10 max-w-4xl mx-auto px-4">
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md border border-gray-100">
+            <h2 class="text-2xl font-bold mb-2 text-brand-darkGold">מדריך תפירה ויזואלי - סרט סיליקון וקטיפה</h2>
+            <p class="text-gray-600 text-sm mb-8">כל שלב מלווה באיור מפורט. עקבי אחר ההוראות לקבלת גימור מקצועי ברמת מותג.</p>
+
+            <div class="space-y-12">
+                <!-- Step 1 -->
+                <div class="border-b pb-8">
+                    <div class="flex items-center space-x-3 space-x-reverse mb-3">
+                        <span class="w-8 h-8 bg-brand-gold text-white font-bold rounded-full flex items-center justify-center">1</span>
+                        <h3 class="font-bold text-lg">חיתוך הבד וסיליקון הירכונים</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">גזרי רצועת קטיפה אלסטית באורך 52 ס"מ וברוחב 12 ס"מ. גזרי רצועת גומי סיליקון באורך 40 ס"מ.</p>
+                    
+                    <!-- SVG Diagram 1 -->
+                    <div class="bg-stone-50 p-4 rounded-xl border border-gray-200 flex justify-center">
+                        <svg width="100%" height="120" viewBox="0 0 500 120" class="max-w-md">
+                            <!-- Velvet Fabric Strip -->
+                            <rect x="20" y="20" width="460" height="40" rx="4" fill="#6B46C1" opacity="0.2" stroke="#6B46C1" stroke-width="2"/>
+                            <text x="250" y="45" text-anchor="middle" font-size="12" fill="#4C1D95" font-weight="bold">בד קטיפה: 52 ס"מ × 12 ס"מ</text>
+                            <!-- Silicone Strip -->
+                            <rect x="50" y="75" width="400" height="25" rx="3" fill="#3B82F6" opacity="0.2" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4"/>
+                            <!-- Wave pattern for silicone -->
+                            <path d="M 60 87 Q 70 80, 80 87 T 100 87 T 120 87 T 140 87 T 160 87 T 180 87 T 200 87 T 220 87 T 240 87 T 260 87 T 280 87 T 300 87 T 320 87 T 340 87 T 360 87 T 380 87 T 400 87 T 420 87 T 440 87" fill="none" stroke="#2563EB" stroke-width="2"/>
+                            <text x="250" y="115" text-anchor="middle" font-size="11" fill="#1E40AF">סרט גומי סיליקון (אינטגרלי): 40 ס"מ</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="border-b pb-8">
+                    <div class="flex items-center space-x-3 space-x-reverse mb-3">
+                        <span class="w-8 h-8 bg-brand-gold text-white font-bold rounded-full flex items-center justify-center">2</span>
+                        <h3 class="font-bold text-lg">תפירת רצועת הסיליקון לגב הקטיפה</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">הניחי את פס הסיליקון במרכז הצד הפנימי (גב הבד) של הקטיפה. תפרי בתפר זיג-זג אלסטי לאורך שני הצדדים.</p>
+                    
+                    <!-- SVG Diagram 2 -->
+                    <div class="bg-stone-50 p-4 rounded-xl border border-gray-200 flex justify-center">
+                        <svg width="100%" height="130" viewBox="0 0 500 130" class="max-w-md">
+                            <!-- Outer Fabric -->
+                            <rect x="20" y="15" width="460" height="100" rx="4" fill="#E9D5FF" stroke="#9333EA" stroke-width="2"/>
+                            <text x="40" y="35" font-size="10" fill="#6B21A8">גב בד הקטיפה (צד פנימי)</text>
+                            <!-- Silicone Strip centered -->
+                            <rect x="50" y="45" width="400" height="40" rx="2" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+                            <!-- Zig Zag Stitches -->
+                            <path d="M 55 45 L 60 50 L 65 45 L 70 50 L 75 45 L 80 50 L 85 45 L 90 50" fill="none" stroke="#EF4444" stroke-width="2"/>
+                            <path d="M 55 85 L 60 80 L 65 85 L 70 80 L 75 85 L 80 80 L 85 85 L 90 80" fill="none" stroke="#EF4444" stroke-width="2"/>
+                            <text x="250" y="68" text-anchor="middle" font-size="11" fill="#1E3A8A" font-weight="bold">פס סיליקון תפור בתפר זיג-זג (אדום)</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="border-b pb-8">
+                    <div class="flex items-center space-x-3 space-x-reverse mb-3">
+                        <span class="w-8 h-8 bg-brand-gold text-white font-bold rounded-full flex items-center justify-center">3</span>
+                        <h3 class="font-bold text-lg">קיפול, תפירת צינור והפיכה</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">קפלי את הבד לאורכו (ימין מול ימין), תפרי את השוליים הארוכים והפכי את הצינור שנוצר. כעת הסיליקון בפנים והקטיפה בחוץ.</p>
+                    
+                    <!-- SVG Diagram 3 -->
+                    <div class="bg-stone-50 p-4 rounded-xl border border-gray-200 flex justify-center">
+                        <svg width="100%" height="110" viewBox="0 0 500 110" class="max-w-md">
+                            <!-- Folded Tube -->
+                            <rect x="40" y="30" width="420" height="35" rx="17.5" fill="#6B46C1" stroke="#4C1D95" stroke-width="2"/>
+                            <!-- Seam Line -->
+                            <line x1="40" y1="30" x2="460" y2="30" stroke="#EF4444" stroke-width="2" stroke-dasharray="4"/>
+                            <text x="250" y="52" text-anchor="middle" font-size="11" fill="#FFFFFF" font-weight="bold">צינור קטיפה מוכן (הפוך לאחר תפירה)</text>
+                            <!-- Arrows -->
+                            <path d="M 20 47 L 35 47 M 30 42 L 35 47 L 30 52" stroke="#D4AF37" stroke-width="2" fill="none"/>
+                            <path d="M 480 47 L 465 47 M 470 42 L 465 47 L 470 52" stroke="#D4AF37" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div>
+                    <div class="flex items-center space-x-3 space-x-reverse mb-3">
+                        <span class="w-8 h-8 bg-brand-gold text-white font-bold rounded-full flex items-center justify-center">4</span>
+                        <h3 class="font-bold text-lg">חיבור הסקוטש (Velcro) בקצוות</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">תפרי את קטע הסקוטש המחוספס בצד אחד, ואת הקטע הרך בצד הנגדי כדי מאפשר סגירה מתכווננת בעורף.</p>
+                    
+                    <!-- SVG Diagram 4 -->
+                    <div class="bg-stone-50 p-4 rounded-xl border border-gray-200 flex justify-center">
+                        <svg width="100%" height="100" viewBox="0 0 500 100" class="max-w-md">
+                            <!-- Main Band Ends -->
+                            <rect x="30" y="30" width="440" height="30" rx="15" fill="#4A5568"/>
+                            <!-- Velcro Right -->
+                            <rect x="40" y="35" width="50" height="20" rx="3" fill="#D4AF37"/>
+                            <text x="65" y="49" text-anchor="middle" font-size="9" fill="#FFF">זכר</text>
+                            <!-- Velcro Left -->
+                            <rect x="410" y="35" width="50" height="20" rx="3" fill="#A0AEC0"/>
+                            <text x="435" y="49" text-anchor="middle" font-size="9" fill="#FFF">נקבה</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TAB 3: MARKETING PRODUCTS & EXPANSION PLAN -->
+    <section id="expansion-view" class="tab-content hidden py-10 max-w-5xl mx-auto px-4">
+        <div class="space-y-8">
+            <!-- Marketing Products Expansion -->
+            <div class="bg-white p-6 rounded-2xl shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-brand-darkGold">מוצרים נלווים להגדלת סל הקניות (Upsell & Cross-sell)</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="border border-gray-200 p-4 rounded-xl space-y-2">
+                        <div class="text-2xl">🧴</div>
+                        <h3 class="font-bold">תרסיס ניקוי מיוחד לסיליקון</h3>
+                        <p class="text-xs text-gray-600">ספריי עדין המנקה שומניות מרצועת הסיליקון ומחזיר למוצר את אחיזתו המלאה כמו ביום הראשון.</p>
+                        <span class="text-xs font-bold text-brand-darkGold block">מחיר מומלץ: ₪29</span>
+                    </div>
+
+                    <div class="border border-gray-200 p-4 rounded-xl space-y-2">
+                        <div class="text-2xl">👛</div>
+                        <h3 class="font-bold">שקית נסיעות נושמת מלווה</h3>
+                        <p class="text-xs text-gray-600">נרתיק קטן ואלגנטי עשוי רשת/סאטן לשמירה על הסרט בתיק ללא לכלוך או סיבים.</p>
+                        <span class="text-xs font-bold text-brand-darkGold block">מחיר מומלץ: ₪19 (או מתנה במארז)</span>
+                    </div>
+
+                    <div class="border border-gray-200 p-4 rounded-xl space-y-2">
+                        <div class="text-2xl">🧣</div>
+                        <h3 class="font-bold">מטפחות בסיס וסרטי נפח</h3>
+                        <p class="text-xs text-gray-600">סרט נפח (בובו) קל משקל הכולל כבר בחלקו הפנימי את פס הסיליקון שלנו בילט-אין.</p>
+                        <span class="text-xs font-bold text-brand-darkGold block">מחיר מומלץ: ₪119</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Marketing Strategy Kit -->
+            <div class="bg-white p-6 rounded-2xl shadow-md space-y-4">
+                <h2 class="text-2xl font-bold text-brand-darkGold">חומרים שיווקיים מוכנים לשימוש</h2>
+                
+                <div class="space-y-4">
+                    <div class="p-4 bg-brand-softBg rounded-xl">
+                        <h3 class="font-bold text-sm text-stone-800">1. תסריט לסרטון ויראלי (Reels / TikTok):</h3>
+                        <p class="text-xs text-gray-700 italic mt-1">
+                            "פותחים עם קלוז-אפ: מישהי מושכת פאה/מטפחת חזק קדימה – והיא לא זזה! <br>
+                            קריין: 'ניסית כבר הכל והמטפחת עדיין מחליקה? תכירי את VelvetGrip – הסרט שמשלב קטיפה איכותית עם פס סיליקון של ירכונים. אפס תזוזה, אפס כאבי ראש. לחצי על הקישור למבצע הזוגי!'"
+                        </p>
+                    </div>
+
+                    <div class="p-4 bg-brand-softBg rounded-xl">
+                        <h3 class="font-bold text-sm text-stone-800">2. הצעת שיתוף פעולה למעצבות/פדאניות (B2B):</h3>
+                        <p class="text-xs text-gray-700 mt-1">
+                            "היי [שם המעצבת], ראיתי את הקולקציה המהפנטת שלך! אשמח לשלוח לך במתנה את סרט הסיליקון והקטיפה שלנו. פיתחנו אותו במיוחד כדי שהלקוחות שלך ייהנו מנוחות מוחלטת והחזקה יציבה לכל היום של הציצית/המטפחת/הפאה."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-white py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center text-xs space-y-3 opacity-80">
+            <p>VelvetGrip © 2026 - כל הזכויות שמורות | תוכנית עסקית, מיתוג ואתר מכירות</p>
+            <p>מוצר פרימיום למניעת החלקה לשיער, פאות וכיסויי ראש</p>
+        </div>
+    </footer>
+
+    <!-- Tab Switching Script -->
+    <script>
+        function switchTab(tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            // Remove active style from all tab buttons
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+
+            // Show current tab content and activate button
+            document.getElementById(tabId).classList.remove('hidden');
+            document.getElementById('tab-' + tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+```eof
+
+### מה הקובץ כולל?
+1. **אתר חנות מעוצב (תצוגת לקוח):** דף נחיתה מכירתי מלא עם כותרות, הצעת ערך, טבלת מחירים ומארזים, וכפתורי הנעה לפעולה.
+2. **מדריך תפירה מלווה באיורים דיאגרמטיים (SVG):** 4 שלבי תפירה ברורים הכוללים שרטוטים ויזואליים מדויקים (חיתוך, מיקום הסיליקון, תפירת הצינור והרכבת הסקוטש).
+3. **מוצרים נלווים ושיווק:** תוכנית להרחבת סל הקניות (ספריי ניקוי לסיליקון, שקיות אחסון, בובו נצמד), יחד עם תסריט סרטון ויראלי וטקסט לפנייה למעצבות.
+
+http://googleusercontent.com/image_generation_content/1_1020
+
+
+
+http://googleusercontent.com/image_generation_content/1_1021
+
+
+
+http://googleusercontent.com/image_generation_content/1_1022
